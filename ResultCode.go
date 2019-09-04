@@ -71,6 +71,7 @@ const (
 	PHONECODE_NOT_NIL         = 1008
 	PHONECODE_NOT_NIL_MESSAGE = "手机验证码不能为空"
 
+	//获取前端json数据错误
 	REQUESTBODY_FAIL         = 1009
 	REQUESTBODY_FAIL_MESSAGE = "请求体获取失败"
 
