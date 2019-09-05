@@ -34,7 +34,7 @@ const (
 	TOKEN_IS_NULL         = 600
 	TOKEN_IS_NULL_MESSAGE = "获取token为空"
 
-	//注册登录
+	//########################注册登录####################################
 	REGISTER_SUCCESS         = 1000
 	REGISTER_SUCCESS_MESSAGE = "注册成功"
 
@@ -74,7 +74,12 @@ const (
 	VERIFICATION_CODE_FAIL=1009
 	VERIFICATION_CODE_FAIL_MESSAGE="验证码失败"
 
-	//获取前端json数据错误
+	VERIFICATION_CODE_NOT_SAME=1010
+	VERIFICATION_CODE_NOT_SAME_MESSAGE="验证码不匹配"
+	//############################################################
+
+
+	//#################获取前端json数据错误#########################
 	REQUESTBODY_FAIL         = 1009
 	REQUESTBODY_FAIL_MESSAGE = "请求体获取失败"
 
