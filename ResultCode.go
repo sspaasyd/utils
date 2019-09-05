@@ -79,6 +79,9 @@ const (
 
 	PASSWORD_MD5_FAIL=1011
 	PASSWORD_MD5_FAIL_MESSAGE="处理客户信息异常"
+
+	RESEND_CODE=1012
+	RESEND_CODE_MESSAGE="请重新发送验证码"
 	//############################################################
 
 
