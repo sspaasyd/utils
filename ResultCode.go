@@ -76,6 +76,9 @@ const (
 
 	VERIFICATION_CODE_NOT_SAME=1010
 	VERIFICATION_CODE_NOT_SAME_MESSAGE="验证码不匹配"
+
+	PASSWORD_MD5_FAIL=1011
+	PASSWORD_MD5_FAIL_MESSAGE="处理客户信息异常"
 	//############################################################
 
 
