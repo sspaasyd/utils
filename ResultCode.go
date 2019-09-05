@@ -82,6 +82,9 @@ const (
 
 	RESEND_CODE=1012
 	RESEND_CODE_MESSAGE="请重新发送验证码"
+
+	LOGIN_FAIL=1013
+	LOGIN_FAIL_MESSAGE="登录失败"
 	//############################################################
 
 
