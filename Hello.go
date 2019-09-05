@@ -1,5 +1,7 @@
 package utils
 
-func hello() {
+import "fmt"
 
+func hello() {
+	fmt.Println("hello")
 }
