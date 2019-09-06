@@ -10,6 +10,9 @@ const (
 	LOGIN         = 307
 	LOGIN_MESSAGE = "重新登录"
 
+	TOKEN_IS_NIL=308
+	TOKEN_IS_NIL_MESSAGE="token不能为空"
+
 	REQUEST_PARAMETERS         = 400
 	REQUEST_PARAMETERS_MESSAGE = "请求参数不能为空"
 
