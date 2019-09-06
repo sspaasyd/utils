@@ -91,6 +91,9 @@ const (
 
 	EMAIL_NOT_REGISTER=1015
 	EMAIL_NOT_REGISTER_MESSAGE="邮箱未注册"
+
+	NOT_ALLOWED_LOGIN=1016
+	NOT_ALLOWED_LOGIN_MESSAGE="不允许登录"
 	//############################################################
 
 
