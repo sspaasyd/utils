@@ -97,6 +97,9 @@ const (
 
 	NOT_ALLOWED_LOGIN=1016
 	NOT_ALLOWED_LOGIN_MESSAGE="不允许登录"
+
+	PASSWORD_FAULT=1017
+	PASSWORD_FAULT_MESSAGE="密码错误"
 	//############################################################
 
 
