@@ -106,6 +106,7 @@ const (
 	//#################获取前端json数据错误#########################
 	REQUESTBODY_FAIL         = 1009
 	REQUESTBODY_FAIL_MESSAGE = "请求体获取失败"
+	//############################################################
 
 	//网络提示信息（1300-1400）
 	PRIVATE_NNETWORK_EXIST         = 1300
@@ -222,4 +223,51 @@ const (
 
 	EDITE_PROJECT_SUCCESS         = 1429
 	EDITE_PROJECT_SUCCESS_MESSAGE = "项目修改成功"
+
+	//#################项目配额#########################
+	CPU_QUOTA_INSUFFICIENT         = 1501
+	CPU_QUOTA_INSUFFICIENT_MESSAGE = "cpu配额不足"
+
+	RAM_QUOTA_INSUFFICIENT         = 1502
+	RAM_QUOTA_INSUFFICIENT_MESSAGE = "ram配额不足"
+
+	IP_QUOTA_INSUFFICIENT         = 1503
+	IP_QUOTA_INSUFFICIENT_MESSAGE = "ip配额不足"
+
+	IP_WIDTH_QUOTA_INSUFFICIENT         = 1504
+	IP_WIDTH_QUOTA_INSUFFICIENT_MESSAGE = "带宽配额不足"
+
+	CINDER_QUOTA_INSUFFICIENT         = 1505
+	CINDER_QUOTA_INSUFFICIENT_MESSAGE = "硬盘数量配额不足"
+
+	HOST_CREATE_LIMIT         = 1506
+	HOST_CREATE_LIMIT_MESSAGE = "主机配额不足"
+
+	CINDER_CREATE_LIMIT         = 1507
+	CINDER_CREATE_LIMIT_MESSAGE = "硬盘配额不足"
+
+	SNATSHOP_CREATE_LIMIT         = 1508
+	SNATSHOP_CREATE_LIMIT_MESSAGE = "快照配额不足"
+
+	SECURITY_GROUP_LIMIT         = 1509
+	SECURITY_GROUP_LIMIT_MESSAGE = "安全组配额不足"
+
+	DELETE_DEFAULTRULE_FAIL         = 1510
+	DELETE_DEFAULTRULE_FAIL_MESSAGE = "默认安全组规则不可以删除"
+
+	PRIVATENTWORK_CREATE_FAIL         = 1511
+	PRIVATENTWORK_CREATE_FAIL_MESSAGE = "私有网络配额不足"
+
+	LB_CREATE_LIMIT         = 1512
+	LB_CREATE_LIMIT_MESSAGE = "负载均衡配额不足"
+
+	QUOTA_CANNOTLESSTHN0         = 1513
+	QUOTA_CANNOTLESSTHN0_MESSAGE = "配额数必须大于等于0"
+
+	QUOTA_EDIT_FAILURE         = 1514
+	QUOTA_EDIT_FAILURE_MESSAGE = "配额数修改失败"
+
+	QUOTA_EDIT_CURRENTQUOTA         = 1515
+	QUOTA_EDIT_CURRENTQUOTA_MESSAGE = "配额数必须大于当前配额"
+	//######################################################
 )
