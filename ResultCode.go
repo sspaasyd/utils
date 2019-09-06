@@ -85,6 +85,12 @@ const (
 
 	LOGIN_FAIL=1013
 	LOGIN_FAIL_MESSAGE="登录失败"
+
+	PHONE_NOT_REGISTER=1014
+	PHONE_NOT_REGISTER_MESSAGE="手机号未注册"
+
+	EMAIL_NOT_REGISTER=1015
+	EMAIL_NOT_REGISTER_MESSAGE="邮箱未注册"
 	//############################################################
 
 
