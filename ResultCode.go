@@ -112,6 +112,9 @@ const (
 
 	SEND_CODE_FAIL=1021
 	SEND_CODE_FAIL_MESSAGE="发送验证码失败"
+
+	GET_DATA_FAIL=1022
+	GET_DATA_FAIL_MESSAGE="解析数据失败"
 	//############################################################
 
 

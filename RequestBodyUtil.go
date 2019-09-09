@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-func RequestBody(r *http.Request, v interface{}) error {
+func RequestBody(r *http.Request, v *interface{}) error {
 	data, e := ioutil.ReadAll(r.Body)
 	if e != nil {
 		fmt.Println("RequestBody,ioutil.ReadAll(r.Body)异常", e)
@@ -24,7 +24,7 @@ func RequestBody(r *http.Request, v interface{}) error {
 	}
 
 	//解析为结构体
-	e2 := json.Unmarshal(data, &v)
+	e2 := json.Unmarshal(data, v)
 	if e2 != nil {
 		fmt.Println("RequestBody,解析为结构体异常", e2)
 		return e2
