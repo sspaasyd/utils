@@ -109,6 +109,9 @@ const (
 
 	UPDATE_PASSWORD_FAIL=1020
 	UPDATE_PASSWORD_FAIL_MESSAGE="修改密码失败"
+
+	SEND_CODE_FAIL=1021
+	SEND_CODE_FAIL_MESSAGE="发送验证码失败"
 	//############################################################
 
 
