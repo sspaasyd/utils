@@ -100,6 +100,15 @@ const (
 
 	PASSWORD_FAULT=1017
 	PASSWORD_FAULT_MESSAGE="密码错误"
+
+	UPDATE_PHONE_FAIL=1018
+	UPDATE_PHONE_FAIL_MESSAGE="修改手机号失败"
+
+	UPDATE_EMAIL_FAIL=1019
+	UPDATE_EMAIL_FAIL_MESSAGE="修改邮箱失败"
+
+	UPDATE_PASSWORD_FAIL=1020
+	UPDATE_PASSWORD_FAIL_MESSAGE="修改密码失败"
 	//############################################################
 
 
