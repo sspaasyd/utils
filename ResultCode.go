@@ -115,6 +115,9 @@ const (
 
 	GET_DATA_FAIL=1022
 	GET_DATA_FAIL_MESSAGE="解析数据失败"
+
+	PAGING_CONDITION_NIL=1023
+	PAGING_CONDITION_NIL_MESSAGE="分页条件不能为空"
 	//############################################################
 
 
