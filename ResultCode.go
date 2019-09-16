@@ -350,5 +350,10 @@ const (
 	LOADBALANCE_QUOTA_CANNOTLESSTHN0         = 1536
 	LOADBALANCE_QUOTA_CANNOTLESSTHN0_MESSAGE = "负载均衡配额数必须大于等于0"
 
+	PHONE_NOT_MATCH         = 1537
+	PHONE_NOT_MATCH_MESSAGE = "手机格式有误"
+
+	MAIL_NOT_MATCH         = 1538
+	MAIL_NOT_MATCH_MESSAGE = "邮箱格式有误"
 	//######################################################
 )
