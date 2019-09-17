@@ -177,6 +177,9 @@ const (
 
 	INTERNALIPNAME_IS_NIL         = 1118
 	INTERNALIPNAME_IS_NIL_MESSAGE = "VPC名称不能为空"
+
+	INTERNALIPCID_IS_NIL=1119
+	INTERNALIPCID_IS_NIL_MESSAGE="VPC客户id不能为空"
 	//############################################################
 
 	//#################获取前端json数据错误#########################
