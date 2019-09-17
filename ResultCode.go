@@ -183,6 +183,9 @@ const (
 
 	INSERT_SERVER_FAIL=1120
 	INSERT_SERVER_FAIL_MESSAGE="创建主机失败"
+
+	SERVERID_IS_NIL=1121
+	SERVERID_IS_NIL_MESSAGE="主机id不能为空"
 	//############################################################
 
 	//#################获取前端json数据错误#########################
