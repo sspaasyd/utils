@@ -180,6 +180,9 @@ const (
 
 	INTERNALIPCID_IS_NIL=1119
 	INTERNALIPCID_IS_NIL_MESSAGE="VPC客户id不能为空"
+
+	INSERT_SERVER_FAIL=1120
+	INSERT_SERVER_FAIL_MESSAGE="创建主机失败"
 	//############################################################
 
 	//#################获取前端json数据错误#########################
