@@ -447,5 +447,11 @@ const (
 
 	REGION_NOT_EXIST         = 1539
 	REGION_NOT_EXIST_MESSAGE = "区域不存在"
+
+	EDITE_DADREGION_FAIL         = 1540
+	EDITE_DADREGION_FAIL_MESSAGE = "修改父区域失败，区域名已存在"
+
+	EDITE_SONREGION_FAIL         = 1541
+	EDITE_SONREGION_FAIL_MESSAGE = "修改子区域失败，区域名已存在"
 	//######################################################
 )
