@@ -505,6 +505,9 @@ const (
 
 	ORGANIZATION_NOT_NULL         = 1611
 	ORGANIZATION_NOT_NULL_MESSAGE = "组织机构代码证必传"
+
+	RESON_OR_REMARK_NOT_NULL         = 1612
+	RESON_OR_REMARK_NOT_NULL_MESSAGE = "打回原因和备注不能为空"
 	//######################################################
 
 )
