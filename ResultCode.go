@@ -119,11 +119,11 @@ const (
 	PAGING_CONDITION_NIL         = 1023
 	PAGING_CONDITION_NIL_MESSAGE = "分页条件不能为空"
 
-	CUSTOMERID_IS_NIL=1024
-	CUSTOMERID_IS_NIL_MESSAGE="客户id为空"
+	CUSTOMERID_IS_NIL         = 1024
+	CUSTOMERID_IS_NIL_MESSAGE = "客户id为空"
 
-	SEND_CODE_IS_NIL=1025
-	SEND_CODE_IS_NIL_MESSAGE="是否短信通知不能为空"
+	SEND_CODE_IS_NIL         = 1025
+	SEND_CODE_IS_NIL_MESSAGE = "是否短信通知不能为空"
 	//############################################################
 
 	//#################云主机#####################################
@@ -214,17 +214,17 @@ const (
 	SERVER_REBOOT_FAIL         = 1128
 	SERVER_REBOOT_FAIL_MESSAGE = "主机重启失败"
 
-	SERVER_BIND_FLOATIP=1129
-	SERVER_BIND_FLOATIP_MESSAGE="主机绑定浮动ip,请解绑"
+	SERVER_BIND_FLOATIP         = 1129
+	SERVER_BIND_FLOATIP_MESSAGE = "主机绑定浮动ip,请解绑"
 
-	SERVER_BIND_CINDER=1130
-	SERVER_BIND_CINDER_MESSAGE="主机挂载硬盘,请卸载"
+	SERVER_BIND_CINDER         = 1130
+	SERVER_BIND_CINDER_MESSAGE = "主机挂载硬盘,请卸载"
 
-	JUST_UPGRADE=1031
-	JUST_UPGRADE_MESSAGE="配置只能升级"
+	JUST_UPGRADE         = 1031
+	JUST_UPGRADE_MESSAGE = "配置只能升级"
 
-	UPGRADE_STATUS_ING=1032
-	UPGRADE_STATUS_ING_MESSAGE="正在升级"
+	UPGRADE_STATUS_ING         = 1032
+	UPGRADE_STATUS_ING_MESSAGE = "正在升级"
 	//############################################################
 
 	//#################获取前端json数据错误#########################
@@ -471,5 +471,8 @@ const (
 
 	EDITE_SONREGION_FAIL         = 1541
 	EDITE_SONREGION_FAIL_MESSAGE = "修改子区域失败，区域名已存在"
+
+	AUTHRIOTY_FAIL         = 1542
+	AUTHRIOTY_FAIL_MESSAGE = "认证状态修改失败"
 	//######################################################
 )
