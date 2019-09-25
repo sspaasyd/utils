@@ -471,8 +471,12 @@ const (
 
 	EDITE_SONREGION_FAIL         = 1541
 	EDITE_SONREGION_FAIL_MESSAGE = "修改子区域失败，区域名已存在"
-
-	AUTHRIOTY_FAIL         = 1542
+	//####################个人企业认证 1600-1700##################################
+	AUTHRIOTY_FAIL         = 1600
 	AUTHRIOTY_FAIL_MESSAGE = "认证状态修改失败"
+
+	CUSTOMER_IS_AUTHRIOTY         = 1601
+	CUSTOMER_IS_AUTHRIOTY_MESSAGE = "用户已经添加企业认证无需添加个人认证"
 	//######################################################
+
 )
