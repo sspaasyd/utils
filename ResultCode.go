@@ -476,7 +476,35 @@ const (
 	AUTHRIOTY_FAIL_MESSAGE = "认证状态修改失败"
 
 	CUSTOMER_IS_AUTHRIOTY         = 1601
-	CUSTOMER_IS_AUTHRIOTY_MESSAGE = "用户已经添加企业认证无需添加个人认证"
+	CUSTOMER_IS_AUTHRIOTY_MESSAGE = "个人认证已提交,无需重复提交"
+	PICTURE_NOT_FULL              = 1602
+	PICTURE_NOT_FULL_MESSAGE      = "图片上传数量有误"
+
+	COMPANY_IS_AUTHRIOTY         = 1603
+	COMPANY_IS_AUTHRIOTY_MESSAGE = "企业认证已提交,无需重复提交"
+
+	AUTHEN_FAILED         = 1604
+	AUTHEN_FAILED_MESSAGE = "认证类型出错"
+
+	COMPANY_IS_COMMIT              = 1605
+	COMPANY_IS_COMMIT_MESSAGE      = "用户已经添加企业认证无需添加个人认证"
+	AUTH_CUSTOMER_NOT_EXIT         = 1606
+	AUTH_CUSTOMER_NOT_EXIT_MESSAGE = "该认证用户不存在"
+
+	SOCIAL_CREDIT_CODE         = 1607
+	SOCIAL_CREDIT_CODE_MESSAGE = "社会信用代码必填"
+
+	BUSINESS_LICENSE_CODE         = 1608
+	BUSINESS_LICENSE_CODE_MESSAGE = "营业执照号码必填"
+
+	BUSINESS_LICENSE         = 1609
+	BUSINESS_LICENSE_MESSAGE = "营业执照必传"
+
+	CERTIFICATE_NOT_NULL         = 1610
+	CERTIFICATE_NOT_NULL_MESSAGE = "营业执照必传"
+
+	ORGANIZATION_NOT_NULL         = 1611
+	ORGANIZATION_NOT_NULL_MESSAGE = "组织机构代码证必传"
 	//######################################################
 
 )
