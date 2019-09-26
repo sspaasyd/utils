@@ -7,6 +7,7 @@ import (
 	"time"
 )
 
+//获取32位uuid随机数
 func Get32UUID() string {
 	uuids := NewV4()
 	id := strings.Replace(uuids.String(), "-", "", -1)
