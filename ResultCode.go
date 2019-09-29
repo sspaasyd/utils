@@ -124,6 +124,9 @@ const (
 
 	SEND_CODE_IS_NIL         = 1025
 	SEND_CODE_IS_NIL_MESSAGE = "是否短信通知不能为空"
+
+	CUSTOMER_MONEY_NOT_ENOUGH         = 1026
+	CUSTOMER_MONEY_NOT_ENOUGH_MESSAGE = "客户余额不足"
 	//############################################################
 
 	//#################云主机#####################################
