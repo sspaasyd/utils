@@ -223,11 +223,16 @@ const (
 	SERVER_BIND_CINDER         = 1130
 	SERVER_BIND_CINDER_MESSAGE = "主机挂载硬盘,请卸载"
 
-	JUST_UPGRADE         = 1031
+	JUST_UPGRADE         = 1131
 	JUST_UPGRADE_MESSAGE = "配置只能升级"
 
 	UPGRADE_STATUS_ING         = 1032
 	UPGRADE_STATUS_ING_MESSAGE = "正在升级"
+	//############################################################
+
+	//#################订单#########################
+	ORDER_NOT_EXIST=1200
+	ORDER_NOT_EXIST_MESSAGE="订单不存在"
 	//############################################################
 
 	//#################获取前端json数据错误#########################
