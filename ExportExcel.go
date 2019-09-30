@@ -133,9 +133,14 @@ func ExportExcel(cells []string, sheetname string, inters []interface{}, write h
 	file := CreateExcel(cells, sheetname, inters)
 	filename := fmt.Sprintf("%d.xlsx", time.Now().Unix()) //文件名是毫秒数
 	//导出excel
-	write.Header().Add("Content-Disposition", "attachment;filename="+filename)
+	/*write.Header().Add("Content-Disposition", "attachment;filename="+filename)
 	write.Header().Add("Content-Type", "application/vnd.ms-excel")
-	write.Header().Add("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+	write.Header().Add("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")*/
+	write.Header().Add("Accept-Ranges", "bytes")
+	write.Header().Add("Content-Disposition", "attachment; filename="+filename)
+	write.Header().Add("Cache-Control", "must-revalidate, post-check=0, pre-check=0")
+	write.Header().Add("Pragma", "no-cache")
+	write.Header().Add("Expires", "0")
 	var buffer bytes.Buffer
 	if err := file.Write(&buffer); err != nil {
 		panic(err)
@@ -146,10 +151,16 @@ func ExportExcel(cells []string, sheetname string, inters []interface{}, write h
 	http.ServeContent(write, request, filename, time.Now(), r)
 }
 
-func ExportExcelFile(cells []string, sheetname string, inters []interface{}, path string) string {
+func ExportExcelFile(cells []string, sheetname string, inters []interface{}, path string, write http.ResponseWriter, request *http.Request) string {
 	file := CreateExcel(cells, sheetname, inters)
 	filename := fmt.Sprintf("%d.xlsx", time.Now().Unix()) //文件名是毫秒数
 	url := path + filename
 	file.Save(url)
+	write.Header().Add("Accept-Ranges", "bytes")
+	write.Header().Add("Content-Disposition", "attachment; filename="+filename)
+	write.Header().Add("Cache-Control", "must-revalidate, post-check=0, pre-check=0")
+	write.Header().Add("Pragma", "no-cache")
+	write.Header().Add("Expires", "0")
+	http.ServeFile(write, request, url)
 	return url
 }
