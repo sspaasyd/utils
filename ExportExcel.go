@@ -124,13 +124,13 @@ func CreateExcel(cells []string, sn string, inters []interface{}) (file *xlsx.Fi
 // 文件名称以毫秒数命名
 //函数传入一个[]interface{}数组，必须在传入之前就已经转换成[]interface{},否则报错
 //cells :excel第一行数据，标题
-//sn: sheet页的名字，如果不写的话，默认是Sheet1
+//sheetname: sheet页的名字，如果不写的话，默认是Sheet1
 //inters: Excel的数据
 //write 页面的responseWrite
 //request  页面的http.request请求
 
-func ExportExcel(cells []string, sn string, inters []interface{}, write http.ResponseWriter, request *http.Request) {
-	file := CreateExcel(cells, sn, inters)
+func ExportExcel(cells []string, sheetname string, inters []interface{}, write http.ResponseWriter, request *http.Request) {
+	file := CreateExcel(cells, sheetname, inters)
 	filename := fmt.Sprintf("%d.xlsx", time.Now().Unix()) //文件名是毫秒数
 	//导出excel
 	write.Header().Add("Content-Disposition", "attachment;filename="+filename)
