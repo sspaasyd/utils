@@ -145,3 +145,11 @@ func ExportExcel(cells []string, sheetname string, inters []interface{}, write h
 
 	http.ServeContent(write, request, filename, time.Now(), r)
 }
+
+func ExportExcelFile(cells []string, sheetname string, inters []interface{}, path string) string {
+	file := CreateExcel(cells, sheetname, inters)
+	filename := fmt.Sprintf("%d.xlsx", time.Now().Unix()) //文件名是毫秒数
+	url := path + filename
+	file.Save(url)
+	return url
+}
