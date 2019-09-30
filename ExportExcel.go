@@ -129,18 +129,19 @@ func CreateExcel(cells []string, sn string, inters []interface{}) (file *xlsx.Fi
 //write 页面的responseWrite
 //request  页面的http.request请求
 
+//直接下载为Excel
 func ExportExcel(cells []string, sheetname string, inters []interface{}, write http.ResponseWriter, request *http.Request) {
 	file := CreateExcel(cells, sheetname, inters)
 	filename := fmt.Sprintf("%d.xlsx", time.Now().Unix()) //文件名是毫秒数
 	//导出excel
-	/*write.Header().Add("Content-Disposition", "attachment;filename="+filename)
+	write.Header().Add("Content-Disposition", "attachment;filename="+filename)
 	write.Header().Add("Content-Type", "application/vnd.ms-excel")
-	write.Header().Add("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")*/
-	write.Header().Add("Accept-Ranges", "bytes")
+	write.Header().Add("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+	/*write.Header().Add("Accept-Ranges", "bytes")
 	write.Header().Add("Content-Disposition", "attachment; filename="+filename)
 	write.Header().Add("Cache-Control", "must-revalidate, post-check=0, pre-check=0")
 	write.Header().Add("Pragma", "no-cache")
-	write.Header().Add("Expires", "0")
+	write.Header().Add("Expires", "0")*/
 	var buffer bytes.Buffer
 	if err := file.Write(&buffer); err != nil {
 		panic(err)
@@ -151,6 +152,7 @@ func ExportExcel(cells []string, sheetname string, inters []interface{}, write h
 	http.ServeContent(write, request, filename, time.Now(), r)
 }
 
+//先把Excel保存，然后在下载
 func ExportExcelFile(cells []string, sheetname string, inters []interface{}, path string, write http.ResponseWriter, request *http.Request) string {
 	file := CreateExcel(cells, sheetname, inters)
 	filename := fmt.Sprintf("%d.xlsx", time.Now().Unix()) //文件名是毫秒数
