@@ -8,7 +8,7 @@ import (
 //小数点位数处理
 
 //先通过Sprintf保留两位小数，再转成float64
-func decimal(f float64, num int) float64 {
+func Decimal(f float64, num int) float64 {
 	s1 := "%."
 	s2 := "f"
 	itoa := strconv.Itoa(num)
