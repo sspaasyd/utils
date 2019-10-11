@@ -237,6 +237,9 @@ const (
 
 	INSERT_MIRROR_FAIL         = 1034
 	INSERT_MIRROR_FAIL_MESSAGE = "创建镜像失败"
+
+	DELETE_MIRROR_FAIL         = 1035
+	DELETE_MIRROR_FAIL_MESSAGE = "删除镜像失败"
 	//############################################################
 
 	//#################订单#########################
