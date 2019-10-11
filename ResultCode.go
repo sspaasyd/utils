@@ -231,6 +231,12 @@ const (
 
 	UPGRADE_STATUS_ING         = 1032
 	UPGRADE_STATUS_ING_MESSAGE = "正在升级"
+
+	MIRRORFORM_NIL         = 1033
+	MIRRORFORM_NIL_MESSAGE = "镜像类型不能为空"
+
+	INSERT_MIRROR_FAIL         = 1034
+	INSERT_MIRROR_FAIL_MESSAGE = "创建镜像失败"
 	//############################################################
 
 	//#################订单#########################
