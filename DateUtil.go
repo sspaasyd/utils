@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"log"
 	"time"
 )
 
@@ -18,4 +19,18 @@ func GetTime(year, month, day int) string {
 //获取下一个小时的时间
 func GetNextHourTime() string {
 	return time.Now().Add(-time.Hour).Format("2006-01-02 15:04:05")
+}
+
+//判断指定时间是否小于当前时间，是返回true.否则返回false
+func CompareTime(t string) bool {
+	now := GetNow()
+	now2, e1 := time.Parse("2006-01-02 15:04:05", now)
+	t2, e2 := time.Parse("2006-01-02 15:04:05", t)
+
+	if e1 != nil || e2 != nil {
+		log.Println("e1", e1)
+		log.Println("e2", e2)
+	}
+	b := t2.Before(now2)
+	return b
 }
