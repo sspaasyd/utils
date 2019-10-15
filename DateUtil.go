@@ -2,6 +2,7 @@ package utils
 
 import (
 	"log"
+	"strconv"
 	"time"
 )
 
@@ -45,4 +46,11 @@ func GetNextTime(startTime, expireTime string) string {
 
 	result := parse2.Add(sub).String()
 	return result
+}
+
+//获取时间戳毫秒值
+func GetTimeStamp() string {
+	t := time.Now().UnixNano() / 1e6
+	timeStamp := strconv.FormatInt(t, 10)
+	return timeStamp
 }
