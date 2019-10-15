@@ -34,3 +34,15 @@ func CompareTime(t string) bool {
 	b := t2.Before(now2)
 	return b
 }
+
+//根据开始时间和到期时间,计算下一次的到期时间
+func GetNextTime(startTime, expireTime string) string {
+	//计算两个时间的时间戳
+	parse, _ := time.Parse("2006-01-02 15:04:05", startTime)
+	parse2, _ := time.Parse("2006-01-02 15:04:05", expireTime)
+	//计算时间差值
+	sub := parse2.Sub(parse)
+
+	result := parse2.Add(sub).String()
+	return result
+}
