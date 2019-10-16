@@ -54,3 +54,23 @@ func GetTimeStamp() string {
 	timeStamp := strconv.FormatInt(t, 10)
 	return timeStamp
 }
+
+//比较时分秒的大小
+func LeftIsBigger(left, right string) bool {
+	if "" == left || "" == right {
+		return false
+	}
+	if len(left) != len(right) {
+		return false
+	}
+	for i := 0; i < len(left); i++ {
+		l := left[i]
+		r := right[i]
+		if l > r {
+			return true
+		} else if l < r {
+			return false
+		}
+	}
+	return false
+}
