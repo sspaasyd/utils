@@ -74,3 +74,17 @@ func LeftIsBigger(left, right string) bool {
 	}
 	return false
 }
+
+//获取两个日期之间的天数，天数取整
+//date 日期
+func GetDaysTwoTime(date string) (days int) {
+	location, _ := time.LoadLocation("Asia/Shanghai")
+	//把date转换成当前时区的时间
+	t1, _ := time.ParseInLocation("2006-01-02 15:04:05", date, location)
+	//获取当前时间的秒值
+	t2 := t1.Unix() - time.Now().In(location).Unix()
+	//获取整数天数
+	strDays := strconv.FormatInt(t2/(3600*24), 10)
+	days, _ = strconv.Atoi(strDays)
+	return
+}
