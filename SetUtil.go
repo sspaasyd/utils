@@ -4,34 +4,34 @@ import (
 	"sync"
 )
 
-type Set struct {
+type SetCollection struct {
 	m map[string]bool
 	sync.RWMutex
 }
 
 //创建Set集合
-func NewSet() *Set {
-	return &Set{
+func NewSet() *SetCollection {
+	return &SetCollection{
 		m: map[string]bool{},
 	}
 }
 
 //添加元素
-func (s *Set) Add(item string) {
+func (s *SetCollection) Add(item string) {
 	s.Lock()
 	defer s.Unlock()
 	s.m[item] = true
 }
 
 //删除元素
-func (s *Set) Remove(item string) {
+func (s *SetCollection) Remove(item string) {
 	s.Lock()
 	defer s.Unlock()
 	delete(s.m, item)
 }
 
 //判断是否存在元素
-func (s *Set) Has(item string) bool {
+func (s *SetCollection) Has(item string) bool {
 	s.RLock()
 	defer s.RUnlock()
 	_, ok := s.m[item]
@@ -39,19 +39,19 @@ func (s *Set) Has(item string) bool {
 }
 
 //Set长度
-func (s *Set) Len() int {
+func (s *SetCollection) Len() int {
 	return len(s.List())
 }
 
 //清除Set
-func (s *Set) Clear() {
+func (s *SetCollection) Clear() {
 	s.Lock()
 	defer s.Unlock()
 	s.m = map[string]bool{}
 }
 
 //判断Set是否为空
-func (s *Set) IsEmpty() bool {
+func (s *SetCollection) IsEmpty() bool {
 	if s.Len() == 0 {
 		return true
 	}
@@ -59,7 +59,7 @@ func (s *Set) IsEmpty() bool {
 }
 
 //转为切片集合
-func (s *Set) List() []string {
+func (s *SetCollection) List() []string {
 	s.RLock()
 	defer s.RUnlock()
 	list := []string{}
