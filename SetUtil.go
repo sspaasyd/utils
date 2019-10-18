@@ -10,7 +10,7 @@ type Set struct {
 }
 
 //创建Set集合
-func New() *Set {
+func NewSet() *Set {
 	return &Set{
 		m: map[string]bool{},
 	}
