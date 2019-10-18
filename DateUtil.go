@@ -77,14 +77,50 @@ func LeftIsBigger(left, right string) bool {
 
 //获取两个日期之间的天数，天数取整
 //date 日期
-func GetDaysTwoTime(date1 string, date2 string) (days int) {
+func GetDaysTwoTime(startTime string, endTime string) (days int) {
 	location, _ := time.LoadLocation("Asia/Shanghai")
-	//把date1,date2转换成当前时区的时间
-	t1, _ := time.ParseInLocation("2006-01-02 15:04:05", date1, location)
-	t2, _ := time.ParseInLocation("2006-01-02 15:04:05", date2, location)
+	//把startTime,endTime转换成当前时区的时间
+	t1, _ := time.ParseInLocation("2006-01-02 15:04:05", startTime, location)
+	t2, _ := time.ParseInLocation("2006-01-02 15:04:05", endTime, location)
 	t3 := t2.Unix() - t1.Unix()
 	//获取整数天数
 	strDays := strconv.FormatInt(t3/(3600*24), 10)
 	days, _ = strconv.Atoi(strDays)
 	return
+}
+
+//获取两个日期之间的天数，如果天数不为整那天数加1
+func DayBetweenTwoTime(startTime, endTime string) int {
+	location, _ := time.LoadLocation("Asia/Shanghai")
+	//把startTime,endTime转换成当前时区的时间
+	t1, _ := time.ParseInLocation("2006-01-02 15:04:05", startTime, location)
+	t2, _ := time.ParseInLocation("2006-01-02 15:04:05", endTime, location)
+	t3 := t2.Unix() - t1.Unix()
+	var fdays int64
+	//开始时间与结束时间之间的秒数差值是否是整天数，如果不是整天数，最后天数加1
+	if t3%(3600*24) == 0 {
+		fdays = t3 / (3600 * 24)
+	} else {
+		fdays = (t3 / (3600 * 24)) + 1
+	}
+
+	days, _ := strconv.Atoi(strconv.FormatInt(fdays, 10))
+	return days
+}
+
+//结束时间与当前时间相差的天数
+func DayBetweenTwoTimeEnd(endTime string) int {
+	location, _ := time.LoadLocation("Asia/Shanghai")
+	//把endTime转换成当前时区的时间
+	t1, _ := time.ParseInLocation("2006-01-02 15:04:05", endTime, location)
+	t2 := t1.Unix() - time.Now().Unix()
+	var fdays int64
+	//结束时间与当前时间之间的秒数差值是否是整天数，如果不是整天数，最后天数加1
+	if t2%(3600*24) == 0 {
+		fdays = t2 / (3600 * 24)
+	} else {
+		fdays = (t2 / (3600 * 24)) + 1
+	}
+	days, _ := strconv.Atoi(strconv.FormatInt(fdays, 10))
+	return days
 }
