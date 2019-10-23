@@ -246,6 +246,9 @@ const (
 
 	DELETE_MIRROR_FAIL         = 1035
 	DELETE_MIRROR_FAIL_MESSAGE = "删除镜像失败"
+
+	PRODUCTID_IS_NIL         = 1036
+	PRODUCTID_IS_NIL_MESSAGE = "产品id不能为空"
 	//############################################################
 
 	//#################订单#########################
