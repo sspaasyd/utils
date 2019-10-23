@@ -249,6 +249,9 @@ const (
 
 	PRODUCTID_IS_NIL         = 1036
 	PRODUCTID_IS_NIL_MESSAGE = "产品id不能为空"
+
+	RESOURCETYPE_IS_NIL         = 1037
+	RESOURCETYPE_IS_NIL_MESSAGE = "资源类型不能为空"
 	//############################################################
 
 	//#################订单#########################
