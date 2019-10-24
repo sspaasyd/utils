@@ -19,7 +19,7 @@ func GetTime(year, month, day int) string {
 
 //获取下一个小时的时间
 func GetNextHourTime() string {
-	return time.Now().Add(-time.Hour).Format("2006-01-02 15:04:05")
+	return time.Now().Add(time.Hour).Format("2006-01-02 15:04:05")
 }
 
 //判断指定时间是否小于当前时间，是返回true.否则返回false
