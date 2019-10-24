@@ -130,6 +130,9 @@ const (
 
 	MEMBER_NO_PROJECT         = 1027
 	MEMBER_NO_PROJECT_MESSAGE = "成员未被分配项目"
+
+	CUSTOMER_BALANCE_NOT_ENOUGH         = 1028
+	CUSTOMER_BALANCE_NOT_ENOUGH_MESSAGE = "余额不足"
 	//############################################################
 
 	//#################云主机#####################################
@@ -235,22 +238,22 @@ const (
 	CLOUD_HOST_STATUS_NOT_SUPPORT         = 1133
 	CLOUD_HOST_STATUS_NOT_SUPPORT_MESSAGE = "主机状态不支持当前的操作"
 
-	UPGRADE_STATUS_ING         = 1032
+	UPGRADE_STATUS_ING         = 1134
 	UPGRADE_STATUS_ING_MESSAGE = "正在升级"
 
-	MIRRORFORM_NIL         = 1033
+	MIRRORFORM_NIL         = 1135
 	MIRRORFORM_NIL_MESSAGE = "镜像类型不能为空"
 
-	INSERT_MIRROR_FAIL         = 1034
+	INSERT_MIRROR_FAIL         = 1136
 	INSERT_MIRROR_FAIL_MESSAGE = "创建镜像失败"
 
-	DELETE_MIRROR_FAIL         = 1035
+	DELETE_MIRROR_FAIL         = 1137
 	DELETE_MIRROR_FAIL_MESSAGE = "删除镜像失败"
 
-	PRODUCTID_IS_NIL         = 1036
+	PRODUCTID_IS_NIL         = 1138
 	PRODUCTID_IS_NIL_MESSAGE = "产品id不能为空"
 
-	RESOURCETYPE_IS_NIL         = 1037
+	RESOURCETYPE_IS_NIL         = 1139
 	RESOURCETYPE_IS_NIL_MESSAGE = "资源类型不能为空"
 	//############################################################
 
