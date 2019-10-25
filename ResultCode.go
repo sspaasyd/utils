@@ -130,9 +130,6 @@ const (
 
 	MEMBER_NO_PROJECT         = 1027
 	MEMBER_NO_PROJECT_MESSAGE = "成员未被分配项目"
-
-	CUSTOMER_BALANCE_NOT_ENOUGH         = 1028
-	CUSTOMER_BALANCE_NOT_ENOUGH_MESSAGE = "余额不足"
 	//############################################################
 
 	//#################云主机#####################################

@@ -124,3 +124,37 @@ func DayBetweenTwoTimeEnd(endTime string) int {
 	days, _ := strconv.Atoi(strconv.FormatInt(fdays, 10))
 	return days
 }
+
+//获取到期时间
+//payType: 0:按需; 1:按月; 2:按年
+//payTime: 几年/几个月
+func ExpireTime(payType, payTime string) string {
+	//获取payTime中的数字
+	i := GetNumFromString(payTime)
+	var expireTime string
+	//如果是按需,就获取下一个小时
+	if "0" == payType {
+		expireTime = GetNextHourTime()
+	} else if "1" == payType {
+		//如果是按月,根据payTime,获取相应的n月之后的时间
+		expireTime = GetTime(0, i, 0)
+	} else {
+		//如果是按年,根据payTime,获取相应的n年之后的时间
+		expireTime = GetTime(i, 0, 0)
+	}
+	return expireTime
+}
+
+//获取字符串中的数字
+func GetNumFromString(str string) int {
+	slice := []byte(str)
+	var s string
+	for _, v := range slice {
+		//获取字符对应的阿斯克码
+		if v > 47 && v < 58 {
+			s += string(v)
+		}
+	}
+	i, _ := strconv.Atoi(s)
+	return i
+}
