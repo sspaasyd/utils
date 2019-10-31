@@ -740,6 +740,18 @@ const (
 
 	EDITE_SONREGION_FAIL         = 1541
 	EDITE_SONREGION_FAIL_MESSAGE = "修改子区域失败，区域名已存在"
+
+	CINDER_NUMBER_IS_NIL         = 1542
+	CINDER_NUMBER_IS_NIL_MESSAGE = "硬盘数量不能小于1"
+
+	CINDER_ALIASNAME_IS_NIL         = 1543
+	CINDER_ALIASNAME_IS_NIL_MESSAGE = "硬盘别名不能为空"
+
+	CINDER_TYPE_IS_NIL         = 1544
+	CINDER_TYPE_IS_NIL_MESSAGE = "硬盘类型不能为空"
+
+	CINDER_SIZE_IS_NIL         = 1545
+	CINDER_SIZE_IS_NIL_MESSAGE = "硬盘大小不能为空"
 	//####################个人企业认证 1600-1700##################################
 	AUTHRIOTY_FAIL         = 1600
 	AUTHRIOTY_FAIL_MESSAGE = "认证状态修改失败"
