@@ -37,6 +37,9 @@ const (
 	TOKEN_IS_NULL         = 600
 	TOKEN_IS_NULL_MESSAGE = "获取token为空"
 
+	TOTALPRICE_IS_NIL         = 601
+	TOTALPRICE_IS_NIL_MESSAGE = "价格不能为空"
+
 	//########################注册登录####################################
 	REGISTER_SUCCESS         = 1000
 	REGISTER_SUCCESS_MESSAGE = "注册成功"
