@@ -752,6 +752,12 @@ const (
 
 	CINDER_SIZE_IS_NIL         = 1545
 	CINDER_SIZE_IS_NIL_MESSAGE = "硬盘大小不能为空"
+
+	FLOATIP_ALIASNAME_IS_NIL         = 1546
+	FLOATIP_ALIASNAME_IS_NIL_MESSAGE = "浮动IP别名不能为空"
+
+	BANDWIDTH_IS_NIL         = 1547
+	BANDWIDTH_IS_NIL_MESSAGE = "带宽大小不能为空"
 	//####################个人企业认证 1600-1700##################################
 	AUTHRIOTY_FAIL         = 1600
 	AUTHRIOTY_FAIL_MESSAGE = "认证状态修改失败"
