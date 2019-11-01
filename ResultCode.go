@@ -806,9 +806,6 @@ const (
 
 	CARTID_IS_NIL         = 1701
 	CARTID_IS_NIL_MESSAGE = "id不能为空"
-
-	TOTALPRICE_IS_NIL         = 1702
-	TOTALPRICE_IS_NIL_MESSAGE = "价格不能为空"
 	//######################################################
 
 )
