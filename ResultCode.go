@@ -620,6 +620,9 @@ const (
 	CLOUD_CINDER_SNAPSHOT_STATUS_NOT_SUPPORT         = 1466
 	CLOUD_CINDER_SNAPSHOT_STATUS_NOT_SUPPORT_MESSAGE = "当前快照状态不支持此操作"
 
+	UPGRADE_STATUS_IS_ING         = 1467
+	UPGRADE_STATUS_IS_ING_MESSAGE = "正在进行升级"
+
 	//#################项目配额#########################
 	CPU_QUOTA_INSUFFICIENT         = 1501
 	CPU_QUOTA_INSUFFICIENT_MESSAGE = "cpu配额不足"
