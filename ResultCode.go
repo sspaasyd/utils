@@ -133,6 +133,9 @@ const (
 
 	MEMBER_NO_PROJECT         = 1027
 	MEMBER_NO_PROJECT_MESSAGE = "成员未被分配项目"
+
+	SEND_MESSAGE_TEMPLET_ERROR         = 1028
+	SEND_MESSAGE_TEMPLET_ERROR_MESSAGE = "短信模板错误"
 	//############################################################
 
 	//#################云主机#####################################
