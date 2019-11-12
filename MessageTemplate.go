@@ -11,4 +11,6 @@ const (
 	PRODUCT_EXPIRE_ONE = 241618
 	//回收站销毁
 	PRODUCT_DESTROY = 241629
+	//到期产品删除放入回收站
+	DESTROY_TO_RECYCLE = 241616
 )
