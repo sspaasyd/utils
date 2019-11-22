@@ -8,7 +8,7 @@ const (
 	PRODUCT_OPERATING_MESSAGE = "产品正在进行操作"
 
 	LOGIN         = 307
-	LOGIN_MESSAGE = "重新登录"
+	LOGIN_MESSAGE = "token过期,重新登录"
 
 	TOKEN_IS_NIL         = 308
 	TOKEN_IS_NIL_MESSAGE = "token不能为空"
@@ -767,6 +767,9 @@ const (
 
 	BANDWIDTH_IS_NIL         = 1547
 	BANDWIDTH_IS_NIL_MESSAGE = "带宽大小不能为空"
+
+	DYNAMIC_ADD_CINDER_SANPSHOT_FAIL         = 1548
+	DYNAMIC_ADD_CINDER_SANPSHOT_FAIL_MESSAGE = "动态创建硬盘快照失败"
 	//####################个人企业认证 1600-1700##################################
 	AUTHRIOTY_FAIL         = 1600
 	AUTHRIOTY_FAIL_MESSAGE = "认证状态修改失败"
