@@ -136,6 +136,9 @@ const (
 
 	SEND_MESSAGE_TEMPLET_ERROR         = 1028
 	SEND_MESSAGE_TEMPLET_ERROR_MESSAGE = "短信模板错误"
+
+	PAGETYPE_CONVERSION_ERROR         = 1029
+	PAGETYPE_CONVERSION_ERROR_MESSAGE = "分页类型转换失败"
 	//############################################################
 
 	//#################云主机#####################################
